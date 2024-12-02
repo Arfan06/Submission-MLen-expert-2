@@ -85,7 +85,7 @@ Dari grafik batang yang dibuat, terlihat bahwa distribusi produk dalam dataset c
 
 Berdasarkan grafik batang yang ditampilkan, merk dengan proporsi penjualan paling tinggi yaitu Nike sebesar 21,4% dan yang terendah adalah merk Gucci yaitu sebesar 19,1%.
 
-<img src = color.png"/> <br>
+<img src = "gambar/color.png"/> <br>
  
  Produk yang berwarna putih memiliki proporsi penjualan paling tinggi, yaitu sebesar 19,3%. Sedangkan produk yang berwarna hijau, merah dan hitam memiliki proporsi yang paling rendah. Ketiga warna tersebut memiliki penjualan yang seimbang, yaitu di sekitar 15%.
 
