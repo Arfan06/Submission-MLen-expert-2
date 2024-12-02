@@ -8,7 +8,7 @@ Sistem rekomendasi dirancang untuk menganalisis dan memprediksi preferensi pengg
 
 Hal ini perlu dilakukan karena dalam dunia fashion, preferensi pelanggan dapat berubah dengan cepat, dan volume produk yang tersedia sering kali membuat pelanggan kesulitan memilih item yang sesuai dengan selera mereka. Dengan adanya sistem rekomendasi, brand fashion dapat memberikan pengalaman belanja yang lebih personal dan efisien, mengarahkan pelanggan ke produk yang sesuai dengan gaya, kebutuhan, dan anggaran mereka. Hal ini tidak hanya meningkatkan kepuasan pelanggan tetapi juga memperkuat loyalitas terhadap brand dalam membangun hubungan jangka panjang dengan konsumen.
 
-**Daftar Pustaka**
+**Daftar Pustaka** <br>
 [1]. Riswan, D., Putra, H. E. R., & Saputra, R. N. (2024). Pengembangan sistem rekomendasi berbasis kecerdasan buatan untuk meningkatkan pengalaman pengguna di platform e-commerce. _JUKTISI_, _Volume 2_(No. 3), 572–580.
 
 [2]. Fajriansyah, M., Adikara, P. P., & Widodo, A. W. (2021). Sistem rekomendasi film menggunakan content-based filtering. _Jurnal Pengembangan Teknologi Informasi dan Ilmu Komputer_, _Vol. 5_(No. 6), 2188–2199. Fakultas Ilmu Komputer, Universitas Brawijaya. Retrieved from [http://j-ptiik.ub.ac.id](http://j-ptiik.ub.ac.id).
@@ -71,29 +71,29 @@ Dataset ini terdiri dari 1000 data pengguna, produk, harga, dan rating.  Harga p
 ### Data Condition
 Dataset yang digunakan dalam analisis ini memiliki kualitas data yang baik, dengan tidak adanya nilai **null**, **duplicate**, maupun **missing values**. Kondisi ini memastikan bahwa data bersih dan siap digunakan untuk proses analisis lebih lanjut tanpa memerlukan penanganan data yang hilang atau tidak valid. Hal ini dibuktikan melalui pemeriksaan statistik dan visualisasi **boxplot** untuk setiap kolom numerik, yang menunjukkan distribusi data secara keseluruhan.
 
-**~~&&&& GAMBAR BOX_PLOT &&&&~~**
+<img src = "box_plot.png"/> <br>
 
 Boxplot yang dihasilkan tidak menunjukkan adanya data yang kosong atau nilai ekstrim yang tidak valid. Semua kolom numerik seperti `Price`, `Rating`, dan lainnya memiliki distribusi yang terlihat lengkap, dengan persebaran nilai yang sesuai dengan batas logis dataset. Kondisi ini mendukung validitas analisis serta memungkinkan penerapan model machine learning tanpa risiko bias akibat data yang hilang atau duplikasi.
 
 ## Univariate Analysis
 
-~~**&&&& GAMBAR KATEGORI &&&&**~~
+<img src = "kategori.png"/> <br>
 
 Dari grafik batang yang dibuat, terlihat bahwa distribusi produk dalam dataset cukup beragam, dengan beberapa kategori memiliki dominasi lebih besar. Kategori **jeans** memiliki proporsi yang paling besar, yaitu sebanyak 23,1%, diikuti dengan produk **shoes** sebesar 22,2%, **t-shirt** 20,1% dan kategori **sweater** memiliki proporsi yang paling kecil, yaitu sebesar 17%. Hal ini menunjukan pada musim penjualan tersebut, produk-produk *casual* dan *versatile* terjual lebih laris dibanding produk yang berorientasi pada kondisi musim dan acara formal, seperti sweater dan dress.
 
-~~**&&&& GAMBAR BRAND &&&&**~~
+<img src = "brand.png"/> <br>
 
 Berdasarkan grafik batang yang ditampilkan, merk dengan proporsi penjualan paling tinggi yaitu Nike sebesar 21,4% dan yang terendah adalah merk Gucci yaitu sebesar 19,1%.
 
-~~**&&&& GAMBAR COLOR &&&&**~~
+<img src = color.png"/> <br>
  
  Produk yang berwarna putih memiliki proporsi penjualan paling tinggi, yaitu sebesar 19,3%. Sedangkan produk yang berwarna hijau, merah dan hitam memiliki proporsi yang paling rendah. Ketiga warna tersebut memiliki penjualan yang seimbang, yaitu di sekitar 15%.
 
-~~**&&&& GAMBAR SIZE &&&&**~~
+<img src = "size.png"/> <br>
 
 Proporsi penjualan berdasarkan ukuran, memiliki persentase yang seimbang. Semua ukuran yang terjual, berada di rentang sekitar  25%.
 
-~~**&&&& GAMBAR TOP_BRAND &&&&**~~
+<img src = "brand.png"/> <br>
 
 Grafik batang di atas menunjukan top 3 product dari masing-masing merek. Berdasarkan 5 merek yang dijual, 4 diantaranya memiliki jenis produk terlaris yang sama yaitu Adidas, Gucci, Nike dan Zara. Sedangkan untuk merk H&M, kategori T-Shirt tidak masuk ke dalam kategori top 3, melainkan Dress.
 
@@ -199,19 +199,19 @@ Cosine similarity adalah metrik yang digunakan untuk mengukur kesamaan antara du
 
 **Rumus**
 
-~~**&&&& Cosine_base &&&&**~~
+<img src = "Cosine_base.png"/> <br>
 
 Dimana:
 -   **AxB** adalah perkalian antara dua vektor.
 -   **∥A∥** adalah panjang (norma) dari vektor **A**, yang dihitung sebagai:
 
-~~**&&&& VEKTOR  &&&&**~~
+<img src = "VEKTOR.png"/> <br>
 
 - **∥B∥** adalah panjang (norma) dari vektor **B**, yang dihitung dengan cara yang sama seperti vektor **A**.
 
 Dapat diuriakan menjadi rumus berikut:
 
-~~**&&&& notasi &&&&**~~
+<img src = "notasi.png"/> <br>
 
 Nilai cosine similarity berkisar antara:
 - 1: Vektor memiliki arah yang sama (kesamaan sempurna).
@@ -296,7 +296,7 @@ Berdasarkan hasil penerapan algoritma cosine similiarity, diperoleh hasil 5 tera
 ## Evaluation
 Penilaian hasil dari performa model yang telah dibuat menggunakan Mean Squared Error (MSE), berfungsi untuk mengukur seberapa dekat hasil prediksi model dengan nilai aktual pada data kontinu. MSE dihitung dengan mengambil rata-rata dari kuadrat perbedaan antara nilai prediksi dan nilai aktual. Matriks ini sering digunakan dalam tugas regresi, termasuk dalam sistem rekomendasi untuk mengevaluasi seberapa akurat prediksi rating. Formula yang digunakan adalah sebagai berikut:
 
-~~**&&&& MSE  &&&&**~~
+<img src = "MSE.png"/> <br>
 
 -  yi ​: Nilai aktual.
 -  ȳi ​: Nilai prediksi.
@@ -306,11 +306,11 @@ Nilai MSE yang kecil menunjukkan bahwa prediksi model mendekati nilai aktual. Se
 
 Dari hasil pelatihan model dengan skema ukuran batch sebanyak 64 bagian, epoch sebanyak 100 dan verbose 1, diperoleh nilai sebagai berikut:
 
-~~**&&&& train &&&&**~~
+<img src = "train.png"/> <br>
 
 Berikut adalah proses training jika ditampilkan dalam bentuk gambar plot:
 
-~~**&&&& plotloss &&&&**~~
+<img src = "plotloss.png"/> <br>
 
 
 -   **Loss (train loss): 0.0106**  
