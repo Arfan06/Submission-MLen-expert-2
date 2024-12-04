@@ -127,8 +127,8 @@ Data diproses menggunakan `TfidfVectorizer` dari pustaka `sklearn`, yang diranca
 - *Size*: Ukuran produk.
 
 Setiap kolom teks ini diubah menjadi matriks TF-IDF menggunakan `fit_transform`. Proses ini menghasilkan matriks berbentuk `[n_samples, n_features]`, di mana:
-     - *n_samples*: Jumlah data (baris).
-     - *n_features*: Jumlah fitur unik (kata atau istilah) dalam teks setelah preprocessing.
+- *n_samples*: Jumlah data (baris).
+- *n_features*: Jumlah fitur unik (kata atau istilah) dalam teks setelah preprocessing.
  
 Ukuran matriks TF-IDF untuk masing-masing kolom ditampilkan untuk memastikan keberhasilan transformasi dan memahami dimensi data hasil preprocessing menggunakan fungsi `shape`. Berikut adalah hasil yang diperoleh.
 | Kolom          | Bentuk Matriks TF-IDF | Penjelasan                                 |
