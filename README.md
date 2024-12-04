@@ -8,7 +8,7 @@ Sistem rekomendasi dirancang untuk menganalisis dan memprediksi preferensi pengg
 
 Hal ini perlu dilakukan karena dalam dunia fashion, preferensi pelanggan dapat berubah dengan cepat, dan volume produk yang tersedia sering kali membuat pelanggan kesulitan memilih item yang sesuai dengan selera mereka. Dengan adanya sistem rekomendasi, brand fashion dapat memberikan pengalaman belanja yang lebih personal dan efisien, mengarahkan pelanggan ke produk yang sesuai dengan gaya, kebutuhan, dan anggaran mereka. Hal ini tidak hanya meningkatkan kepuasan pelanggan tetapi juga memperkuat loyalitas terhadap brand dalam membangun hubungan jangka panjang dengan konsumen.
 
-**Daftar Pustaka**
+**Daftar Pustaka** </br>
 [1]. Riswan, D., Putra, H. E. R., & Saputra, R. N. (2024). Pengembangan sistem rekomendasi berbasis kecerdasan buatan untuk meningkatkan pengalaman pengguna di platform e-commerce. _JUKTISI_, _Volume 2_(No. 3), 572–580.
 
 [2]. Fajriansyah, M., Adikara, P. P., & Widodo, A. W. (2021). Sistem rekomendasi film menggunakan content-based filtering. _Jurnal Pengembangan Teknologi Informasi dan Ilmu Komputer_, _Vol. 5_(No. 6), 2188–2199. Fakultas Ilmu Komputer, Universitas Brawijaya. Retrieved from [http://j-ptiik.ub.ac.id](http://j-ptiik.ub.ac.id).
