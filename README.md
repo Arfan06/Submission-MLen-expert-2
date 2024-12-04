@@ -231,13 +231,14 @@ Nilai cosine similarity berkisar antara:
 5. Sparsity Sensitivity: Matriks jarang (*sparse*) dapat menghasilkan nilai nol jika tidak ada elemen yang beririsan.
 
 Berdasarkan hasil penerapan algoritma cosine similiarity, diperoleh hasil 5 teratas produk rekomendasi sebagai berikut:
-| Product_ID | Product_Name | Brand | Color  | Size |
-|------------|--------------|-------|--------|------|
-| 10         | T-shirt      | Zara  | White  | XL   |
-| 12         | Sweater      | Gucci | Yellow | M    |
-| 13         | Jeans        | Nike  | Red    | M    |
-| 23         | Jeans        | Zara  | Yellow | M    |
-| 25         | Sweater      | H&M   | Green  | S    |
+| Product_ID | Product_Name | Brand  | Color | Size |
+|------------|--------------|--------|-------|------|
+| 218        | Sweater      | Gucci  | Red   | M    |
+| 411        | Sweater      | Nike   | Red   | M    |
+| 581        | Sweater      | Zara   | Red   | L    |
+| 710        | Sweater      | Zara   | Red   | S    |
+| 335        | Sweater      | Gucci  | Red   | XL   |
+
 
 
 ### Deep Learning 
@@ -302,13 +303,14 @@ Berikut merupakan konfigurasi *custom* parameter yang dibangun pada model:
 - Epochs: 100
 
 Berdasarkan hasil penerapan model base RecommenderNet, diperoleh hasil 5 teratas produk rekomendasi sebagai berikut:
-| Product_ID | Product_Name | Brand | Category          | Price |
-|------------|--------------|-------|-------------------|-------|
-| 122        | Sweater      | H&M   | Women's Fashion   | 36    |
-| 234        | Sweater      | H&M   | Kids' Fashion     | 55    |
-| 624        | T-shirt      | Nike  | Women's Fashion   | 70    |
-| 634        | Shoes        | Nike  | Kids' Fashion     | 27    |
-| 662        | Dress        | Nike  | Women's Fashion   | 14    |
+| Product_ID | Product_Name | Brand   | Category        | Price |
+|------------|--------------|---------|-----------------|-------|
+| 501        | Sweater      | Adidas  | Kids' Fashion   | 41    |
+| 684        | Dress        | Adidas  | Women's Fashion | 12    |
+| 731        | Sweater      | Adidas  | Men's Fashion   | 62    |
+| 808        | T-shirt      | Adidas  | Women's Fashion | 26    |
+| 833        | Sweater      | H&M     | Kids' Fashion   | 82    |
+
 
 Berdasarkan perbandingan hasil yang diperoleh pada model yang telah dibangun, model terbaik yang menjadi pilihan adalah model RecommenderNet yang dikonfigurasi secara kustom melalui hyperparameter. Dengan pemilihan hyperparameter yang tepat, performa model mampu meningkat dengan baik sekaligus mengatasi kekurangan yang ada pada model dasar.
 
@@ -394,16 +396,16 @@ Berikut adalah proses training jika ditampilkan dalam bentuk gambar plot:
 <img src = "gambar/plotloss.png"/> <br>
 
 
--   **Loss (train loss): 0.0106**  
-    Nilai loss ini menunjukkan seberapa baik model memprediksi rating pada data pelatihan. Dengan menggunakan fungsi loss *mean squared error (MSE)*, nilai ini menunjukkan rata-rata kuadrat dari kesalahan prediksi. Nilai yang kecil seperti 0.0106 menandakan bahwa model telah mempelajari pola data dengan baik pada set pelatihan.
+-   **Loss (train loss): 0.011**  
+    Nilai loss ini menunjukkan seberapa baik model memprediksi rating pada data pelatihan. Dengan menggunakan fungsi loss *mean squared error (MSE)*, nilai ini menunjukkan rata-rata kuadrat dari kesalahan prediksi. Nilai yang kecil seperti 0.011 menandakan bahwa model telah mempelajari pola data dengan baik pada set pelatihan.
     
--   **Mean Squared Error (MSE): 0.0015**  
+-   **Mean Squared Error (MSE): 0.0014**  
     MSE untuk data pelatihan menunjukkan bahwa rata-rata kesalahan prediksi model sangat kecil dalam hal skala rating yang digunakan. Hal ini mendukung bahwa model memiliki performa yang baik pada data pelatihan.
     
--   **Validation Loss: 0.0671**  
-    Validation loss mengukur performa model pada data validasi yang tidak dilibatkan dalam pelatihan. Nilai ini lebih tinggi dibandingkan train loss, yang mengindikasikan bahwa model sedikit kesulitan untuk sepenuhnya generalisasi pola dari data pelatihan ke data baru. Namun, selisih yang tidak terlalu besar (0.0671 vs 0.0106) menandakan bahwa model tidak mengalami overfitting yang signifikan.
+-   **Validation Loss: 0.0691**  
+    Validation loss mengukur performa model pada data validasi yang tidak dilibatkan dalam pelatihan. Nilai ini lebih tinggi dibandingkan train loss, yang mengindikasikan bahwa model sedikit kesulitan untuk sepenuhnya generalisasi pola dari data pelatihan ke data baru. Namun, selisih yang tidak terlalu besar (0.0691 vs 0.011) menandakan bahwa model tidak mengalami overfitting yang signifikan.
     
--   **Validation MSE: 0.0581**  
+-   **Validation MSE: 0.0596**  
     MSE pada data validasi lebih tinggi dibandingkan data pelatihan, menunjukkan adanya sedikit perbedaan antara prediksi model pada data yang belum dilihat sebelumnya dibandingkan dengan data pelatihan. Namun, nilai ini tetap cukup rendah, menandakan bahwa model telah mempelajari hubungan antara pengguna dan produk secara efektif.
 
 Secara keseluruhan, hasil ini menunjukkan bahwa model `RecommenderNet` memiliki performa yang baik dan mampu memprediksi rating dengan tingkat kesalahan yang rendah pada data pelatihan maupun data validasi.
