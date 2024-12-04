@@ -121,10 +121,10 @@ Setiap pengguna memiliki preferensi unik terhadap produk:
 Data diproses menggunakan `TfidfVectorizer` dari pustaka `sklearn`, yang dirancang untuk mengubah teks menjadi representasi vektor numerik berbasis TF-IDF (Term Frequency-Inverse Document Frequency). Parameter `stop_words='english'` digunakan untuk menghapus kata-kata umum dalam bahasa Inggris yang tidak memberikan nilai informasi signifikan, seperti "the", "and", dll.
 
 **Kolom yang diproses**:
-     - *Product Name*: Nama produk.
-     - *Category*: Kategori produk.
-     - *Color*: Warna produk.
-     - *Size*: Ukuran produk.
+- *Product Name*: Nama produk.
+- *Category*: Kategori produk.
+- *Color*: Warna produk.
+- *Size*: Ukuran produk.
 
 Setiap kolom teks ini diubah menjadi matriks TF-IDF menggunakan `fit_transform`. Proses ini menghasilkan matriks berbentuk `[n_samples, n_features]`, di mana:
      - *n_samples*: Jumlah data (baris).
