@@ -389,11 +389,11 @@ Nilai MSE yang kecil menunjukkan bahwa prediksi model mendekati nilai aktual. Se
 
 Dari hasil pelatihan model dengan skema ukuran batch sebanyak 64 bagian, epoch sebanyak 100 dan verbose 1, diperoleh nilai sebagai berikut:
 
-<img src = "gambar/train.png"/> <br>
+<img src = "gambar/train2.png"/> <br>
 
 Berikut adalah proses training jika ditampilkan dalam bentuk gambar plot:
 
-<img src = "gambar/plotloss.png"/> <br>
+<img src = "gambar/plotloss2.png"/> <br>
 
 
 -   **Loss (train loss): 0.011**  
