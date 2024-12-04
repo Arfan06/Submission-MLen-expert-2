@@ -227,8 +227,8 @@ Nilai cosine similarity berkisar antara:
 3. Relevansi untuk Data Teks: Cocok untuk data berbasis kata seperti matriks TF-IDF atau data embedding.
 
 **Kekurangan**
-4. Tidak Memperhatikan Magnitudo: Perbedaan bobot pada elemen vektor diabaikan.
-5. Sparsity Sensitivity: Matriks jarang (*sparse*) dapat menghasilkan nilai nol jika tidak ada elemen yang beririsan.
+1. Tidak Memperhatikan Magnitudo: Perbedaan bobot pada elemen vektor diabaikan.
+2. Sparsity Sensitivity: Matriks jarang (*sparse*) dapat menghasilkan nilai nol jika tidak ada elemen yang beririsan.
 
 Berdasarkan hasil penerapan algoritma cosine similiarity, diperoleh hasil 5 teratas produk rekomendasi sebagai berikut:
 | Product_ID | Product_Name | Brand  | Color | Size |
